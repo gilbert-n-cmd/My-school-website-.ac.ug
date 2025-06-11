@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us</title>
+    <link rel="icon" href="imgs/clogo.png" type="Image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(191, 252, 198);
+     
+        }
+.header{
+      background-color: #079d1b; 
+      padding: 20px;
+      height: 100px;
+        }
+   @media screen and (max-width: 1000px){
+    .header{
+     background-color: #079d1b; 
+    padding: 20px;
+    height: 150px;
+        }
+      }
+      .Menubar{
+  background: rgb(0, 100, 1);
+  text-align: center;
+}
+.Menubar h2{
+  margin-left: 20%;
+}
+.Menubar ul{
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+  z-index: 10;
+}
+@media screen and (max-width: 300px){
+  .Menubar ul{
+    display: inline-block;
+    list-style: none;
+    color: #fff;
+    z-index: 10;
+    text-align: left;
+  }
+}
+.Menubar ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 770px){
+ 
+    .Menubar ul li{
+      width: 50px;
+     margin: 5px;
+
+    }
+    
+  }
+.Menubar ul li a{
+  text-decoration: none;
+  color: white;
+}
+.active, .Menubar ul li:hover{
+  background-color: lightgreen;
+  border-radius: 3px;
+  
+}
+
+.submenu1{
+  display: none;
+
+}
+.Menubar ul li:hover .submenu1{
+  display: block;
+  position: absolute;
+  background-color: rgb(4, 165, 4);
+  margin-top: 15px;
+  margin-left: 15px;
+  z-index: 10;
+}
+.Menubar ul li:hover .submenu1 ul{
+  display: block;
+  margin: 10px;
+}
+.Menubar ul li:hover .submenu1 ul li{
+  width:60px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  border-radius: 0;
+  text-align: left;
+  background: transparent;
+}
+.Menubar ul li:hover .submenu1 ul li:last-child{
+border-bottom: none;
+}
+.Menubar ul li:hover .submenu1 ul li a:hover{
+  color: rgb(50, 184, 161);
+}
+
+.submenu2{
+  display: none;
+}
+.hoverme:hover .submenu2{
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 60px;
+  background-color: rgb(106, 241, 106);
+}
+@media screen and (max-width: 770px){
+  .hoverme:hover .submenu2{
+    position: absolute;
+    display: inline-block;
+    margin-top: 20px;
+   margin-left: 10px;
+    margin-right: 70px;
+    background-color: rgb(0,45,0);
+  }
+}
+    
+
+    .container {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #93f09b;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: top 0.3s ease, left 0.3s ease;
+    pointer-events: none;
+    color: #067e0c;
+  }
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #0dc94c;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    background-color: #9ff897;
+  }
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #5cb85c;
+  }
+  .form-group input:focus + label,
+  .form-group input:valid + label,
+  .form-group select:focus + label,
+  .form-group select:valid + label {
+    top: -12px;
+    left: 6px;
+    font-size: 12px;
+    color: #067e0c;
+    background-color: #b9ccbc;
+    padding: 0 4px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #4cae4c;
+  }
+  footer {
+    background-color: #039623;
+    padding: 50px 0;
+    
+  }
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 0px;
+  }
+ 
+  .footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    margin-right: 10px;
+  }
+  .footer-left p, .footer-middle p {
+    font-size: 16px;
+    color: #e7ece3;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  .social-icons {
+    margin-top: 10px;
+  }
+  .social-icons a {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .map{
+    width: 60%;
+    height: 70vh;
+  }
+  @media screen and (max-width: 770px){
+    .map{
+    width: 60%;
+    height: 40vh;
+  }
+  }
+  .footer-bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #039623;
+    padding: 0;
+ 
+    padding: 7px 0;
+  }
+  .footer-bottom p {
+    font-size: 15px;
+    color: #03420c;
+    height: 10px;
+  }
+    .moveup{
+    position: fixed;
+    width: 90px;
+    height: 35px;
+    position: absolute;
+    text-align: right;
+    background-color: #034b1a;
+    margin-left: 90%;
+    color: #f1f52d;
+    border-radius: 10%;
+  }
+  @media screen and (max-width: 900px){
+    .moveup{
+    position: fixed;
+    width: 60px;
+    height: 15px;
+    position: absolute;
+    text-align: right;
+    background-color: #034b1a;
+    margin-left: 80%;
+    font-size: 10px;
+    color: #f1f52d;
+    border-radius: 10%;
+  }
+  }
+  @media screen and (max-width: 400px){
+    .moveup{
+    position: fixed;
+    width: 40px;
+    height: 15px;
+    position: absolute;
+    text-align: right;
+    background-color: #034b1a;
+    margin-left: 70%;
+    font-size: 10px;
+    color: #f1f52d;
+    border-radius: 10%;
+  }
+  }   
+    </style>
+</head>
+<body>
+  <div class="Menubar" id="menubar">
+   
+    <img src="imgs/clogo.png" class="logo" height="100px" align="left">
+    <h2 style="margin-top: 0%; text-align: left; color: #f1f52d;">RUYONGA  DIARY FARM</h2>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="aboutus.html">About us</a>
+      <div class="submenu1">
+        <ul>
+          <li><a href="index.html">About the hotel</a></li>
+          <li><a href="index.html">Staff</a></li>
+          <li><a href="aboutus.html">About online product</a></li>
+          <li><a href="aboutus.html">About physical product</a></li>
+          <li><a href="aboutus.html">Gallery</a></li>
+
+        </ul>
+      </div>
+    </li>
+    <li><a href="services.html">Services</a>
+     <div class="submenu1">
+        <ul>
+          <li class="hoverme"><a href="services.html">Online Services</a>
+            <!--<div class="submenu2">
+              <ul>
+                <li><a href="services.html">Milk Products</a></li>
+                   <li><a href="services.html">Cheese Products</a></li>
+                  <li><a href="services.html">Yogurt Products</a></li>
+                </ul>
+            </div>--->
+          </li>
+          <li><a href="#">Physical Services</a></li>
+          <!---<li class="hoverme"><a href="https://play.google.com/store/search?q=dairy+farm+app&c=apps">Mobile Apps</a>
+            <div class="submenu2">
+              <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.yam.feedcalc&pcampaignid=web_share">Android App</a></li>
+                   <li><a href="https://apps.microsoft.com/home?hl=en-US&gl=US">Windows App</a></li>
+                  <li><a href="https://apples.apple.com.com">IOS App</a></li>
+                </ul>
+            </div> 
+          </li>--->
+        </ul>
+      </div>
+    </li>
+    <li><a href="portifolio.html">Portifolio</a></li>
+    <li class="active"><a href="contact.html">Contact Us</a></li>
+    
+    </ul>
+</div> 
+  <section>
+    <div class="container">
+        <h3>You are most welcome to our farm, Please Sign up</h>
+        <fieldset class="fieldset">
+            <form>
+                <div class="form-group">
+                  <input type="text" id="name" name="name" required>
+                  <label for="name">Full Name</label>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" name="email" required>
+                  <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                  <input type="password" id="password" name="password" required>
+                  <label for="password">Password</label>
+                </div>
+                <div class="form-group">
+                  <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <label for="gender">Gender</label>
+                </div>
+                <div class="form-group">
+                  <select id="region" name="region" required>
+                    <option value="" disabled selected>Select Region</option>
+                    <option value="northern">Northern Region</option>
+                    <option value="Southern">Southern Region</option>
+                    <option value="Eastern">Eastern Region</option>
+                    <option value="Western">Western Region</option>
+                    <option value="central">Central Region</option>
+                  </select>
+                  <label for="region">Region</label>
+                </div>
+                Accept our terms of condition: <input type="radio" name="Gender">Accept All
+                others<br>
+                <button type="submit" class="btn">Sign Up</button>
+              </form>
+          </fieldset>
+    </div>
+  </section>
+  <section>
+<center><h3>Our location</h3></center>
+    <center><iframe style="border-radius: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.610263275807!2d30.24248327371846!3d0.5851324635591805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1763d6a9fdf4c201%3A0xdab6293cb51aa734!2sRuyonga%20Dairy%20Farm!5e0!3m2!1sen!2sug!4v1712485232711!5m2!1sen!2sug" class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+  </section>
+     <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h3>About Us</h3>
+      <p>Ruyonga Dairy Farm is committed to providing high-quality dairy products sourced from healthy, well-cared-for cattle. Our mission is to promote sustainable farming practices while delivering wholesome products to nourish families.</p>
+    </div>
+    <div class="footer-middle">
+      <h3>Contact Us</h3>
+      <p>Email: info@ruy0ngadairyfarm.com</p>
+      <p>Phone: +256 760 660472</p>
+      <p>Address: Plot 23, Hoima City, Uganda</p>
+    </div>
+    <div class="footer-right">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://yahoo.com"><img src="imgs/yahoo.jpeg" height="30px" width="40px"></a>
+        <a href="https://youtu.be/Azqsg3Naxi4?si=sws4ifL-rLUa48h1"><img src="imgs/youtube.png" height="30px" width="40px"></a>
+        <a href="https://facebook.com"><img src="imgs/facebook.jpeg" height="30px" width="40px"></a>
+      </div>
+    </div>
+  </div>
+<div class="footer-bottom">
+  <a href="#menubar"><input type="button" class="moveup" id="moveup" value="MOVE UP"></a>
+  <p>&copy; 2024 Ruyonga Dairy Farm. All rights reserved.</p>
+</div>
+
+</body>
+</html>

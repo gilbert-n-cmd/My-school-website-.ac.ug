@@ -1,0 +1,325 @@
+*{
+  margin: 50;
+  padding: 0;
+}
+body{
+  background-color: #d2f3d3;
+  font: italic;
+}
+.Menubar{
+  background: rgb(0, 100, 1);
+  text-align: center;
+}
+.Menubar h2{
+  margin-left: 20%;
+}
+.Menubar ul{
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+  z-index: 10;
+}
+@media screen and (max-width: 300px){
+  .Menubar ul{
+    display: inline-block;
+    list-style: none;
+    color: #fff;
+    z-index: 10;
+    text-align: left;
+  }
+}
+.Menubar ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px){
+ 
+    .Menubar ul li{
+      width: 50px;
+     margin: 5px;
+
+    }
+    
+  }
+.Menubar ul li a{
+  text-decoration: none;
+  color: white;
+}
+.active, .Menubar ul li:hover{
+  background-color: lightgreen;
+  border-radius: 3px;
+  
+}
+
+.submenu1{
+  display: none;
+
+}
+.Menubar ul li:hover .submenu1{
+  display: block;
+  position: absolute;
+  background-color: rgb(4, 165, 4);
+  margin-top: 15px;
+  margin-left: 15px;
+  z-index: 10;
+}
+.Menubar ul li:hover .submenu1 ul{
+  display: block;
+  margin: 10px;
+}
+.Menubar ul li:hover .submenu1 ul li{
+  width: 70px;
+  padding: 10px;
+  /*border-bottom: 1px dotted #fff;*/
+  border-radius: 0;
+  text-align: center;
+  background: transparent;
+}
+.Menubar ul li:hover .submenu1 ul li:last-child{
+border-bottom: none;
+}
+.Menubar ul li:hover .submenu1 ul li a:hover{
+  color: rgb(50, 184, 161);
+}
+
+/*.submenu2{
+  display: none;
+}*/
+.hoverme:hover /*.submenu2*/{
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  /*margin-left: 60px;*/
+  background-color: rgb(106, 241, 106);
+}
+@media screen and (max-width: 770px){
+  .hoverme:hover .submenu2{
+    position: absolute;
+    display: inline-block;
+    margin-top: 20px;
+   margin-left: 10px;
+    margin-right: 70px;
+    background-color: rgb(0,45,0);
+  }
+
+}
+  /* Optional: Add some basic styling */
+  .search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-input {
+    padding: 10px 40px 10px 15px; /* Adjust padding to fit the icon */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 200px; /* Adjust width as needed */
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    height: 25px;
+    width: 25px;
+    transform: translateY(-50%);
+    z-index: 1; /* Ensure the icon is above the input field */
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #0cb14b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 2; /* Ensure the button is above both the input field and the icon */
+}
+.Afrika5{
+transition: transform 1s ease-in-out;
+border-radius: 100%;
+width: 50%;
+}
+.Afrika5:hover{
+  transform: scale(1.2);
+}
+.moving-paragraph {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #d2f3d3;
+    text-decoration: solid;
+    font-size: 20px;
+  }
+
+  .moving-text {
+    position: absolute;
+    white-space: nowrap; 
+    animation: RightToLeft 10s linear reverse infinite ;
+  }
+  .moving-text2 {
+    position: absolute;
+    white-space: nowrap; 
+    animation: RightToLeft 10s linear infinite ;
+  }
+  @keyframes RightToLeft {
+    0% { left: 0%; }
+    50% { left: 50%;}
+    100% { left: 100%; }
+  }
+ .slideshow {
+    height: 600px;
+    width: 100%;
+    position: relative;
+  }
+
+@media screen and (max-width: 770px){
+  .slideshow {
+    height: 250px;
+    width: 100%;
+    position: relative;
+  }
+
+}
+  .slideshow-container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    transition: opacity 2s ease-in-out;
+  }
+
+  .fade-in {
+    opacity: 1 !important;
+  }
+
+  .show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .jat-btn{
+    marker: 50px auto 0;
+    margin-top: 5px;
+    margin-block: 5px;
+    margin-inline: 4px;
+
+
+  }
+  .jat-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 6px 0;
+    color: blue;
+    border: .1px solid green;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+  }
+  .jat-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(2, 59, 11);
+    z-index: -1;
+    transition: 0.5s;
+
+  }
+  .jat-btn a:hover span{
+    width: 100%;
+
+  }
+  .jat-btn a:hover{
+    color: #000;
+  }
+  .taberow{
+    margin-left: 10px;
+    border-radius: 20px;
+  }
+  .footer-bottom{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #039623;
+        padding: 10px 0;
+  }
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+     justify-content: space-between;
+  }
+  .footer-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 0px;
+  }
+ 
+  .footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    margin-right: 10px;
+  }
+  .footer-left p, .footer-middle p {
+    font-size: 16px;
+    color: #e7ece3;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .moveup{
+    position: fixed;
+    width: 120px;
+    height: 35px;
+    position: absolute;
+    text-align: right;
+    background-color: #034b1a;
+    margin-left: 85%;
+    color: #f1f52d;
+    border-radius: 10%;
+  }
+  @media screen and (max-width: 900px){
+    .moveup{
+    position: fixed;
+    width: 80px;
+    height: 15px;
+    position: absolute;
+    text-align: right;
+    background-color: #034b1a;
+    margin-left: 80%;
+    font-size: 10px;
+    color: #f1f52d;
+    border-radius: 10%;
+  }
+  }
+  @media screen and (max-width: 400px){
+    .moveup{
+    position: fixed;
+    width: 40px;
+    height: 15px;
+    position: absolute;
+    text-align: right;
+    background-color: #034b1a;
+    margin-left: 70%;
+    font-size: 10px;
+    color: #f1f52d;
+    border-radius: 10%;
+  }
+}

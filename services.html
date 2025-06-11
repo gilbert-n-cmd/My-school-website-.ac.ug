@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services Services</title>
+    <link rel="icon" href="imgs/clogo.png" type="Image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(179, 248, 176);
+        }
+        .header{
+     background-color: #079d1b; 
+    padding: 10px;
+    height: 160px;
+        }
+  @media screen and (max-width: 300px){
+    .header{
+     background-color: #079d1b; 
+    padding: 20px;
+    height: 180px;
+        }
+      }
+      .Menubar{
+  background: rgb(0, 100, 1);
+  text-align: center;
+}
+.Menubar h2{
+  margin-left: 20%;
+}
+.Menubar ul{
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+  z-index: 10;
+}
+@media screen and (max-width: 300px){
+  .Menubar ul{
+    display: inline-block;
+    list-style: none;
+    color: #fff;
+    z-index: 10;
+    text-align: left;
+  }
+}
+.Menubar ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px){
+ 
+    .Menubar ul li{
+      width: 50px;
+     margin: 5px;
+
+    }
+    
+  }
+.Menubar ul li a{
+  text-decoration: none;
+  color: white;
+}
+.active, .Menubar ul li:hover{
+  background-color: lightgreen;
+  border-radius: 3px;
+  
+}
+
+.submenu1{
+  display: none;
+
+}
+.Menubar ul li:hover .submenu1{
+  display: block;
+  position: absolute;
+  background-color: rgb(4, 165, 4);
+  margin-top: 15px;
+  margin-left: 15px;
+  z-index: 10;
+}
+.Menubar ul li:hover .submenu1 ul{
+  display: block;
+  margin: 10px;
+}
+.Menubar ul li:hover .submenu1 ul li{
+  width:60px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  border-radius: 0;
+  text-align: left;
+  background: transparent;
+}
+.Menubar ul li:hover .submenu1 ul li:last-child{
+border-bottom: none;
+}
+.Menubar ul li:hover .submenu1 ul li a:hover{
+  color: rgb(50, 184, 161);
+}
+
+.submenu2{
+  display: none;
+}
+.hoverme:hover .submenu2{
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 60px;
+  background-color: rgb(106, 241, 106);
+}
+@media screen and (max-width: 770px){
+  .hoverme:hover .submenu2{
+    position: absolute;
+    display: inline-block;
+    margin-top: 20px;
+   margin-left: 10px;
+    margin-right: 70px;
+    background-color: rgb(0,45,0);
+  }
+
+    } 
+        header {
+            background-color: #0ddf4c; 
+            color: #02250d; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: aquamarine;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #04ac20; 
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        @media screen and (max-width: 770px){
+          nav a {
+            color: #04ac20; 
+            text-decoration: none;
+            padding: 5px 10px;
+          }
+        }
+
+        nav a:hover {
+            background-color: #76ec89; 
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 20px;
+        }
+        .enlarge{
+              transition: transform 0.5s ease;
+              border-radius: 10%;
+        }
+         .enlarge:hover{
+            transform: scale(1.2);
+         }
+
+     /* Tooltip text */
+  .tooltip-text {
+    visibility: hidden;
+    width: 100%;
+    color: rgb(194, 197, 26);
+    text-align: center;
+    border-radius: 0px;
+    font-family: sans-serif;
+    padding: 5px 10px;
+    margin-left: 40%;
+    margin-top: -20%;
+
+ 
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  /* Show tooltip text on hover */
+  .image-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+  .Tours{
+    height: 300px;
+    width: 400px;
+  }
+  @media screen and (max-width: 1300px){
+    .Tours{
+    height: 200px;
+    width: 180px;
+  }
+
+  }
+  @media screen and (max-width: 770px){
+    .Tours{
+    height: 100px;
+    width: 120px;
+  }
+
+  }
+  .education-programms{
+    background-color: rgb(179, 248, 176);
+  }
+  .community p, .communityi{
+   text-align: center;
+    
+  }
+  .footer {
+    background-color: #039623;
+    padding: 50px 0;  
+  }
+  .eventhosting{
+    width: 50%;
+    border-radius: 10px;
+    transition: transform 1s ease;
+  }
+  
+    .eventhosting:hover{
+            transform: scale(1.05);
+         }
+  .footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+     justify-content: space-between;
+  }
+  .footer-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 0px;
+  }
+ 
+  .footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    margin-right: 10px;
+  }
+  .footer-left p, .footer-middle p {
+    font-size: 16px;
+    color: #e7ece3;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+   .footer-bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #039623;
+    padding: 0;
+ 
+    padding: 7px 0;
+  }
+  .footer-bottom p {
+    font-size: 15px;
+    color: #03420c;
+    height: 10px;
+  }
+  .communityi{
+    border-radius: 1%;
+   }
+    .moveup{
+    position: fixed;
+    width: 90px;
+    height: 35px;
+    position: absolute;
+    text-align: right;
+    background-color: #034b1a;
+    margin-left: 90%;
+    color: #f1f52d;
+    border-radius: 10%;
+  }
+  @media screen and (max-width: 900px){
+    .moveup{
+    position: fixed;
+    width: 60px;
+    height: 15px;
+    position: absolute;
+    text-align: right;
+    background-color: #034b1a;
+    margin-left: 80%;
+    font-size: 10px;
+    color: #f1f52d;
+    border-radius: 10%;
+  }
+  }
+  @media screen and (max-width: 400px){
+    .moveup{
+    position: fixed;
+    width: 40px;
+    height: 15px;
+    position: absolute;
+    text-align: right;
+    background-color: #034b1a;
+    margin-left: 70%;
+    font-size: 10px;
+    color: #f1f52d;
+    border-radius: 10%;
+  }
+  }
+    </style>
+</head>
+<body>
+  <div class="Menubar" id="menubar">
+   
+    <img src="imgs/clogo.png" class="logo" height="100px" align="left">
+    <h2 style="margin-top: 0%; text-align: left; color: #f1f52d;">RUYONGA  DIARY FARM</h2>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="aboutus.html">About us</a>
+      <div class="submenu1">
+        <ul>
+          <li><a href="index.html">About the hotel</a></li>
+          <li><a href="index.html">Staff</a></li>
+          <li><a href="aboutus.html">About online product</a></li>
+          <li><a href="aboutus.html">About physical product</a></li>
+          <li><a href="aboutus.html">Gallery</a></li>
+        </ul>
+      </div>
+    </li>
+<li class="active"><a href="services.html">Services</a>
+     <div class="submenu1">
+        <ul>
+          <li class="hoverme"><a href="services.html">Online Services</a>
+            <!--<div class="submenu2">
+              <ul>
+                <li><a href="services.html">Milk Products</a></li>
+                   <li><a href="services.html">Cheese Products</a></li>
+                  <li><a href="services.html">Yogurt Products</a></li>
+                </ul>
+            </div>--->
+          </li>
+          <li><a href="#">Physical Services</a></li>
+          <!---<li class="hoverme"><a href="https://play.google.com/store/search?q=dairy+farm+app&c=apps">Mobile Apps</a>
+            <div class="submenu2">
+              <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.yam.feedcalc&pcampaignid=web_share">Android App</a></li>
+                   <li><a href="https://apps.microsoft.com/home?hl=en-US&gl=US">Windows App</a></li>
+                  <li><a href="https://apples.apple.com.com">IOS App</a></li>
+                </ul>
+            </div> 
+          </li>--->
+        </ul>
+      </div>
+    </li>
+    <li><a href="portifolio.html">Portifolio</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    
+    </ul>
+</div> 
+    <header>
+        <h1>Our Services</h1>
+    </header>
+    <nav>
+        <a href="#products">Dairy Product Sales</a>
+        <a href="#tours">Farm Tours</a>
+        <a href="#education-programms">Educational Programs</a>
+        <a href="#events">Event Hosting</a>
+    </nav>
+
+<center>
+      <h3>Business Hours</h3>
+    <table width="40%"><tr><td style="border: #039623 solid 4px;text-align: center; border-radius: 20%; background-color: white;">
+   Monday   : 10:00 AM - 06:00 PM<br><br>
+   Tuesday      10:00 AM - 06:00 PM<br><br>
+   Wednesday    10:00 AM - 06:00 PM<br><br>
+   Thursday     10:00 AM - 06:00 PM<br><br>
+   Friday       10:00 AM - 06:00 PM<br><br>
+   Saturday     10:00 AM - 06:00 PM<br><br>
+    Sunday      Closed 
+    </td></tr>
+  </table>
+    <section style="background-color: aquamarine;">
+      <h3 id="products">Dairy Product Sales</h3>
+      We offer a wide range of dairy products including fresh milk, yogurt, cheese,<br> butter, and more. Our products are sourced from healthy cows raised on our farm,<br> ensuring quality and freshness.
+<table cellspacing="0" style="background-color: #57f386; height: 50vh; width: 100%;">
+    <tr>
+        <th ><h4>Milk products</h4></th>
+        <th>Cheese Products</th>
+        <th>yorghut Products</th>
+    </tr>
+    <tr>
+       <td><center><img src="imgs/product1.jpg" alt="Milk Products" width="50%" height="50%" class="enlarge"></center>
+        <p style="font-family: MV Boli;">Discover our range of fresh and nutritious milk<br> products, carefully produced to meet the highest <br>quality standards.</p>
+    </td>
+  
+
+        <td> <center><img src="imgs/cheese.jpg" alt="Yogurt Products" alt="yorgut Products" width="50%" height="50%"class="enlarge"></center>
+        <p style="font-family: MV Boli;">Experience the creamy goodness of our wholesome yogurt products, perfect for any time of day.</p>
+    </td>
+        <td>
+            <center><img src="imgs/yogut.jpg" alt="Cheese Products" width="50%" height="50%" class="enlarge"></center>
+            <p style="font-family: MV Boli;">Indulge in the rich flavors of our artisanal cheese products, crafted with love and expertise.</p>
+        </td>
+    </tr>
+</table>
+</center>
+</section>
+<section style="background-color: rgb(9, 248, 128);">
+  <center><h3 id="tours">Farm Tours</h3></center>
+  <center><p style="font-family:  Viner Hand ITC; font-size: 25px;">Experience the farm life with our guided farm tours. Learn about the daily operations of a dairy farm, <br>interact with the cows, and enjoy fresh dairy products straight from the source</p></center>
+  <table cell-spacing="0" style="width: 100%;">
+    <tr>
+       <td>
+        <div class="image-container" onclick="showText('tooltip2')">
+        <img src="imgs/tour5.jpg" alt="Image 2" class="Tours">
+        <div class="tooltip-text" id="tooltip2"><p>Our tour to western Uganda<br> At Rukihura Diary arms</p></div>
+  </div>
+     </td>
+     <td>
+      <div class="image-container" onclick="showText('tooltip3')">
+        <img src="imgs/tour6.jpg" alt="tour 2" class="Tours">
+        <div class="tooltip-text" id="tooltip3"><p>Our trip to Ethiopia<br> At Nyangi Diary Farmers</p></div>
+      </div>   
+  </td>
+    <td>
+      <div class="image-container" onclick="showText('tooltip1')">
+        <img src="imgs/tour4.jpg" alt="Image 1" class="Tours">
+        <div class="tooltip-text" id="tooltip1"><p>A trip we made to Newyork,<br> United ststes of America<br>At Luisiville Farms</p>
+        </div>
+      </div>
+     </td>
+  </tr>
+  </table>
+</section>
+<section class="education-programms" id="education-programms">
+  <h3 style="font-family: Blackadder ITC; font-size: 30px;" align="center">Education programs</h3>
+  <p style="font-family: High Tower Text; font-size: 25px;">We offer Education programmes to both the community and education institutions</p>
+  <div class="community">
+    <img src="imgs/community.jpg" class="communityi" height="40%" width="50%" align="left">
+    <p>Our team while educating the Communuty</p>
+  </div>
+  <div class="community">
+    <img src="imgs/student.jpg" class="communityi" height="50%" width="50%" align="right">
+    <p>Our team while educating one of the institutions</p>
+  </div>
+</section>
+<section style="background-color: #04ac20;" id="events">
+ <center> <h3 style="font-family: Ink Free; font-size: 30px; color: #f1f52d;">Event Hosting </h3>
+  <p>We Host events at our Ruyonga dairy farm. Whether it's a birthday party, corporate event, or family gathering,<br> our farm provides a unique and memorable venue with stunning views and delicious dairy treats</p>
+  <img src="imgs/event.jpg" class="eventhosting">
+  <p>One of the events we hosted at our farm with Hajj Ismail</p></center>
+  </section>
+  <section>
+  <center><h2 style="color: #f1f52d;">Other services</h2>
+  <p><p style="font-family: Tempus Sans ITC; font-size: 35px;">Besides All that, We offer other services like Outdoor campaigns on diary farming, we also offer free individual knowledge to individuals who reach us personally,<br> we also give loans to those interested<br>Apply now for a loan?    <a href="#"><input type="Submit" name="" value="Apply Now" style="border-color: #036120; height: 30px; width: 80px; color: #2db456; background-color: blanchedalmond; border-radius: 5px;"></a></p>
+</center>
+</section>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h3>About Us</h3>
+      <p>Ruyonga Dairy Farm is committed to providing high-quality dairy products sourced from healthy, well-cared-for cattle..</p>
+    </div>
+    <div class="footer-middle">
+      <h3>Contact Us</h3>
+      <p>Email: info@ruy0ngadairyfarm.com</p>
+      <p>Phone: +256 760 660472</p>
+      <p>Address: Plot 23, Hoima City, Uganda</p>
+    </div>
+    <div class="footer-right">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://yahoo.com"><img src="imgs/yahoo.jpeg" height="30px" width="40px"></a>
+        <a href="https://youtu.be/Azqsg3Naxi4?si=sws4ifL-rLUa48h1"><img src="imgs/youtube.png" height="30px" width="40px"></a>
+        <a href="https://facebook.com"><img src="imgs/facebook.jpeg" height="30px" width="40px"></a>
+      </div>
+    </div>
+    </div>
+    
+    <section class="footer-bottom">
+      <a href="#menubar"><input type="button" class="moveup" id="moveup" value="MOVE UP"></a>
+      <center><p>&copy; 2024 Ruyonga Dairy Farm. All rights reserved.</p></center>
+
+    </section>
+  </footer>
+
+</body>
+</html>

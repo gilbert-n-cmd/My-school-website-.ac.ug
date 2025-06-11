@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Our Portifolio</title>
+  <link rel="icon" href="imgs/clogo.png" type="Image/png">
+	<style>
+    body{
+      background-color: rgb(146, 233, 153);
+    }
+		.header{
+      background-color: #079d1b; 
+      padding: 20px;
+      height: 120px;
+        }
+        @media screen and (max-width: 770px){
+    .header{
+     background-color: #079d1b; 
+    padding: 20px;
+    height: 160px;
+        }
+      }
+      .Menubar{
+  background: rgb(0, 100, 1);
+  text-align: center;
+}
+.Menubar h2{
+  margin-left: 20%;
+}
+.Menubar ul{
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+  z-index: 10;
+}
+@media screen and (max-width: 300px){
+  .Menubar ul{
+    display: inline-block;
+    list-style: none;
+    color: #fff;
+    z-index: 10;
+    text-align: left;
+  }
+}
+.Menubar ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px){
+ 
+    .Menubar ul li{
+      width: 50px;
+     margin: 5px;
+
+    }
+    
+  }
+.Menubar ul li a{
+  text-decoration: none;
+  color: white;
+}
+.active, .Menubar ul li:hover{
+  background-color: lightgreen;
+  border-radius: 3px;
+  
+}
+
+.submenu1{
+  display: none;
+
+}
+.Menubar ul li:hover .submenu1{
+  display: block;
+  position: absolute;
+  background-color: rgb(4, 165, 4);
+  margin-top: 15px;
+  margin-left: 15px;
+  z-index: 10;
+}
+.Menubar ul li:hover .submenu1 ul{
+  display: block;
+  margin: 10px;
+}
+.Menubar ul li:hover .submenu1 ul li{
+  width:60px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  border-radius: 0;
+  text-align: left;
+  background: transparent;
+}
+.Menubar ul li:hover .submenu1 ul li:last-child{
+border-bottom: none;
+}
+.Menubar ul li:hover .submenu1 ul li a:hover{
+  color: rgb(50, 184, 161);
+}
+
+.submenu2{
+  display: none;
+}
+.hoverme:hover .submenu2{
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 60px;
+  background-color: rgb(106, 241, 106);
+}
+@media screen and (max-width: 770px){
+  .hoverme:hover .submenu2{
+    position: absolute;
+    display: inline-block;
+    margin-top: 20px;
+   margin-left: 10px;
+    margin-right: 70px;
+    background-color: rgb(0,45,0);
+  }
+
+
+    } 
+    .about{
+      background-color: #079d1b;
+      border-top: 0;
+    }
+     .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .carousel-images {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+  .carousel-item {
+    width: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel-image img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .testimonial {
+    text-align: center;
+    font-style: italic;
+  }
+   .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .portfolio-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(199, 206, 203, 0.1);
+  }
+  .portfolio-item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+  .portfolio-item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .portfolio-item p {
+    font-size: 16px;
+    color: #666;
+  }
+  .footer {
+    background-color: #039623;
+    padding: 50px 0;
+    width: auto;
+
+    
+  }
+  .footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+     justify-content: space-between;
+  }
+  .footer-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 0px;
+  }
+ 
+  .footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    margin-right: 10px;
+  }
+  .footer-left p, .footer-middle p {
+    font-size: 16px;
+    color: #e7ece3;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+   .footer-bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #039623;
+    padding: 0;
+ 
+    padding: 7px 0;
+  }
+  .footer-bottom p {
+    font-size: 15px;
+    color: #03420c;
+    height: 10px;
+  }
+  .communityi{
+    border-radius: 1%;
+   }
+    .moveup{
+    position: fixed;
+    width: 90px;
+    height: 35px;
+    position: absolute;
+    text-align: right;
+    background-color: #034b1a;
+    margin-left: 90%;
+    color: #f1f52d;
+    border-radius: 10%;
+  }
+  @media screen and (max-width: 900px){
+    .moveup{
+    position: fixed;
+    width: 60px;
+    height: 15px;
+    position: absolute;
+    text-align: right;
+    background-color: #034b1a;
+    margin-left: 80%;
+    font-size: 10px;
+    color: #f1f52d;
+    border-radius: 10%;
+  }
+  }
+  @media screen and (max-width: 400px){
+    .moveup{
+    position: fixed;
+    width: 40px;
+    height: 15px;
+    position: absolute;
+    text-align: right;
+    background-color: #034b1a;
+    margin-left: 70%;
+    font-size: 10px;
+    color: #f1f52d;
+    border-radius: 10%;
+  }
+  }
+	</style>
+</head>
+<body>
+  <div class="Menubar" id="menubar">
+   
+    <img src="imgs/clogo.png" class="logo" height="100px" align="left">
+    <h2 style="margin-top: 0%; text-align: left; color: #f1f52d;">RUYONGA  DIARY FARM</h2>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="aboutus.html">About us</a>
+      <div class="submenu1">
+        <ul>
+          <li><a href="index.html">About the hotel</a></li>
+          <li><a href="index.html">Staff</a></li>
+          <li><a href="aboutus.html">About online product</a></li>
+          <li><a href="aboutus.html">About physical product</a></li>
+          <li><a href="aboutus.html">Gallery</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a href="services.html">Services</a>
+     <div class="submenu1">
+        <ul>
+          <li class="hoverme"><a href="services.html">Online Services</a>
+            <!--<div class="submenu2">
+              <ul>
+                <li><a href="services.html">Milk Products</a></li>
+                   <li><a href="services.html">Cheese Products</a></li>
+                  <li><a href="services.html">Yogurt Products</a></li>
+                </ul>
+            </div>--->
+          </li>
+          <li><a href="#">Physical Services</a></li>
+          <!---<li class="hoverme"><a href="https://play.google.com/store/search?q=dairy+farm+app&c=apps">Mobile Apps</a>
+            <div class="submenu2">
+              <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.yam.feedcalc&pcampaignid=web_share">Android App</a></li>
+                   <li><a href="https://apps.microsoft.com/home?hl=en-US&gl=US">Windows App</a></li>
+                  <li><a href="https://apples.apple.com.com">IOS App</a></li>
+                </ul>
+            </div> 
+          </li>--->
+        </ul>
+      </div>
+    </li>
+    <li class="active"><a href="portifolio.html">Portifolio</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    
+    </ul>
+</div> 
+<div class="container">
+  <center><h1 style="font-family: Kristen ITC;">Our Past Projects</h1></center>
+  <div class="portfolio-grid">
+    <div class="portfolio-item" style="background-color: #61e675;">
+      <img src="imgs/project 1.jpg" alt="Project 1">
+      <h2>Project Name : Feeds project</h2>
+      <h3>Manager : Hakim Mali</h3>
+      <p>It was launced on July, 2008</p>
+      <p>Aim :  To Provide quality Feeds to Our animals To improve Productivity</p>
+      <p>Capital spent: $500</p>
+      
+    </div>
+    <div class="portfolio-item" style="background-color: #61e675;">
+      <img src="imgs/project 2.jpg" alt="Project 2">
+      <h2>Project Name : Milking Shed project</h2>
+      <h3>Manager : Hakim Mali</h3>
+      <p>It was launced on January, 2010</p>
+      <p>Aim :  To Create Modern and Quality Milking environment To our Animals</p>
+      <p>Capital spent: $450</p>
+    </div>
+    <div class="portfolio-item"  style="background-color: #61e675;">
+      <img src="imgs/Project 3.png" alt="Project 3">
+      <h2>Project Name : Machine Milking project</h2>
+      <h3>Manager : Atugonza Harriet</h3>
+      <p>It was launced on December, 2012</p>
+      <p>Aim :  To Improve on the Milking capacity and Reduce Time spent While Milking. It was also due to increase in Demand og our products</p>
+      <p>Capital spent: $300</p>
+    </div>
+    <div class="portfolio-item" style="background-color: #61e675;">
+      <img src="imgs/project 5.jpg" alt="Project 4">
+      <h2>Project Name  : 10 Cow Shed Design Plan Project</h2>
+      <h3>Manager : Primah</h3>
+      <p>It was launced on February, 2020</p>
+      <p>Aim :  To reduce Competition of Feeds Yo our Animals, improve Milk Quality and increase Productivity</p>
+      <p>Capital spent: $350</p>
+    </div>
+    
+    <div class="portfolio-item" style="background-color: #61e675;">
+      <h2><center>Future Project Plan</center></h2>
+      <img src="imgs/project4.jpg" alt="Project 5">
+      <h2>Project Name : Advanced Animal Shedding</h2>
+      <h3>Manager : Primah</h3>
+      <p>It is to be launced By the End Of This Year</p>
+      <p>Aim :  To Improve the Overall Performance of our Farm interms Of Productivity, Reduce costs of inputs And Increase 
+        Profits</p>
+      <p>Estimated Capital: $600</p>
+    </div>
+  </div>
+ <h2 style="font-family: Ink Free;" align="center">Customer/Client Testomonials</h2>
+</div>/
+  <div class="carousel">
+    <div class="carousel-images">
+      <div class="carousel-item">
+        <div class="carousel-image"><img src="imgs/testimon1.jpg" alt="Testimon 1" height="400px" width="100%" style="border-radius: 10px; border: #03420c;"></div>
+        <p class="testimonial">Amanya John Giving A testimony From  our Feeds Project in 2004<br>"Great service! The team went above and beyond to deliver exceptional results.<br>We expect More And More, Keep It up"</p>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-image"><img src="imgs/testimon2.jpg" alt="testimon2 2" height="400px" width="100%" ></div>
+        <p class="testimonial">Atugonza Pius Testifying on  our Feeds Projects in 2005<br>"We are impressed by the quality of work and attention to detail. Highly recommended! <br> Thank to the Ruyonga Diary Farm Family For the Love"</p>
+      </div>  
+    </div>
+  </div>
+<center><p style="font-family: Copperplate Gothic Light; font-size: 20px;">We as Ruyonga Family We are Very Delighted And Appreciate Our Customers <br>For the Love And care You Give To Us</p></center>
+</section>
+<section>
+  <center>
+  <h3>Meet Our External collabrators testifying our Services</h3>
+  <video controls style="border-radius: 10px; width: 50%;border: solid; border-color: #03420c;">
+    <source src="imgs/videoo.mp4" type="video/mp4">
+  </video>
+</center>
+</section>
+<section class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h3>About Us</h3>
+      <p>Ruyonga Dairy Farm is committed to providing high-quality dairy products sourced from healthy, well-cared-for cattle..</p>
+    </div>
+    <div class="footer-middle">
+      <h3>Contact Us</h3>
+      <p>Email: info@ruy0ngadairyfarm.com</p>
+      <p>Phone: +256 760 660472</p>
+      <p>Address: Plot 23, Hoima City, Uganda</p>
+    </div>
+    <div class="footer-right">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://yahoo.com"><img src="imgs/yahoo.jpeg" height="30px" width="40px"></a>
+        <a href="https://youtu.be/Azqsg3Naxi4?si=sws4ifL-rLUa48h1"><img src="imgs/youtube.png" height="30px" width="40px"></a>
+        <a href="https://facebook.com"><img src="imgs/facebook.jpeg" height="30px" width="40px"></a>
+      </div>
+    </div>
+    </div>
+    <section class="footer-bottom" >  
+      <a href="#menubar"><input type="button" class="moveup" id="moveup" value="MOVE UP"></a>
+      <p>&copy; 2024 Ruyonga Dairy Farm. All rights reserved.</p>
+    
+    </section>
+  </section>
+
+<script>
+  // JavaScript for carousel functionality
+  let currentIndex = 0;
+  const carouselImages = document.querySelector('.carousel-images');
+  const totalImages = document.querySelectorAll('.carousel-item').length;
+
+  function showNextImage() {
+    currentIndex = (currentIndex + 1) % totalImages;
+    updateCarousel();
+  }
+
+  function showPrevImage() {
+    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+    updateCarousel();
+  }
+
+  function updateCarousel() {
+    const translateValue = -currentIndex * 100 + '%';
+    carouselImages.style.transform = `translateX(${translateValue})`;
+  }
+
+  setInterval(showNextImage, 5000); // Auto slide every 3 seconds
+</script>
+
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" href="imgs/clogo.png" type="Image/png">
+    <style>
+      body{
+        background-color: #d1fcd7;
+        padding: 0;
+      }
+    .header{
+     background-color: #079d1b; 
+    padding: 0px;
+    height: 140px;
+        }
+  @media screen and (max-width: 770px){
+    .header{
+     background-color: #079d1b; 
+    padding: 20px;
+    height: 160px;
+        }
+
+  }
+  .Menubar{
+  background: rgb(0, 100, 1);
+  text-align: center;
+}
+.Menubar h2{
+  margin-left: 20%;
+}
+.Menubar ul{
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+  z-index: 10;
+}
+@media screen and (max-width: 300px){
+  .Menubar ul{
+    display: inline-block;
+    list-style: none;
+    color: #fff;
+    z-index: 10;
+    text-align: left;
+  }
+}
+.Menubar ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px){
+ 
+    .Menubar ul li{
+      width: 50px;
+     margin: 5px;
+
+    }
+    
+  }
+  @media screen and (max-width: 500px){
+ 
+ .Menubar ul li{
+   width: 45px;
+  margin: 3px;
+
+ }
+ 
+}
+.Menubar ul li a{
+  text-decoration: none;
+  color: white;
+}
+.active, .Menubar ul li:hover{
+  background-color: lightgreen;
+  border-radius: 3px;
+  
+}
+
+.submenu1{
+  display: none;
+
+}
+.Menubar ul li:hover .submenu1{
+  display: block;
+  position: absolute;
+  background-color: rgb(4, 165, 4);
+  margin-top: 15px;
+  margin-left: 15px;
+  z-index: 10;
+}
+.Menubar ul li:hover .submenu1 ul{
+  display: block;
+  margin: 10px;
+}
+.Menubar ul li:hover .submenu1 ul li{
+  width:60px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  border-radius: 0;
+  text-align: left;
+  background: transparent;
+}
+.Menubar ul li:hover .submenu1 ul li:last-child{
+border-bottom: none;
+}
+.Menubar ul li:hover .submenu1 ul li a:hover{
+  color: rgb(50, 184, 161);
+}
+
+.submenu2{
+  display: none;
+}
+.hoverme:hover .submenu2{
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 60px;
+  background-color: rgb(106, 241, 106);
+}
+@media screen and (max-width: 770px){
+  .hoverme:hover .submenu2{
+    position: absolute;
+    display: inline-block;
+    margin-top: 20px;
+   margin-left: 10px;
+    margin-right: 70px;
+    background-color: rgb(0,45,0);
+  }
+
+    }
+    .meet{
+      font-size: 30px;
+      font-family: Algerian;
+      color: #03420c;
+    }
+    .image-container {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+
+  }
+  @media screen and (max-width: 770px){
+    .image-container { 
+      width: 90%;
+  }
+}
+.img{
+  width: 100%;
+  align-items: center;
+}
+  /* Tooltip text */
+  .tooltip-text {
+    visibility: hidden;
+    width: 90%;
+    color: rgb(206, 202, 8);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  /* Show tooltip text on hover */
+  .image-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+  .footer {
+    background-color: #039623;
+    padding: 50px 0;
+    width: 100%;
+
+  }
+  .social-icons{
+    margin-left: 20px;
+  }
+  .map{
+    width: 50%;
+    height: 500px;
+  }
+  @media screen and (max-width: 770px){
+    .map{
+    width: 50%;
+    height: 200px;
+  }
+  }
+  
+  .footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+     justify-content: space-between;
+  }
+  .footer-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 0px;
+  }
+ 
+  .footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    margin-right: 10px;
+  }
+  .footer-left p, .footer-middle p {
+    font-size: 16px;
+    color: #e7ece3;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+   .footer-bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #039623;
+    padding: 0;
+ 
+    padding: 7px 0;
+  }
+  .footer-bottom p {
+    font-size: 15px;
+    color: #03420c;
+    height: 10px;
+  }
+  .communityi{
+    border-radius: 1%;
+   }
+    .moveup{
+    position: fixed;
+    width: 90px;
+    height: 35px;
+    position: absolute;
+    text-align: right;
+    background-color: #034b1a;
+    margin-left: 90%;
+    color: #f1f52d;
+    border-radius: 10%;
+  }
+  @media screen and (max-width: 900px){
+    .moveup{
+    position: fixed;
+    width: 60px;
+    height: 15px;
+    position: absolute;
+    text-align: right;
+    background-color: #034b1a;
+    margin-left: 80%;
+    font-size: 10px;
+    color: #f1f52d;
+    border-radius: 10%;
+  }
+  }
+  @media screen and (max-width: 400px){
+    .moveup{
+    position: fixed;
+    width: 40px;
+    height: 15px;
+    position: absolute;
+    text-align: right;
+    background-color: #034b1a;
+    margin-left: 70%;
+    font-size: 10px;
+    color: #f1f52d;
+    border-radius: 10%;
+  }
+  }
+    </style>
+    </head>
+<body>
+  <div class="Menubar" id="menubar">
+   
+    <img src="imgs/clogo.png" class="logo" height="100px" align="left">
+    <h2 style="margin-top: 0%; text-align: left; color: #f1f52d;">RUYONGA  DIARY FARM</h2>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li class="active"><a href="aboutus.html">About us</a>
+      <div class="submenu1">
+        <ul>
+          <li><a href="index.html">About the hotel</a></li>
+          <li><a href="index.html">Staff</a></li>
+          <li><a href="aboutus.html">About online product</a></li>
+          <li><a href="aboutus.html">About physical product</a></li>
+          <li><a href="aboutus.html">Gallery</a></li>
+
+
+        </ul>
+      </div>
+    </li>
+    <li><a href="services.html">Services</a>
+     <div class="submenu1">
+        <ul>
+          <li class="hoverme"><a href="services.html">Online Services</a>
+            <!--<div class="submenu2">
+              <ul>
+                <li><a href="services.html">Milk Products</a></li>
+                   <li><a href="services.html">Cheese Products</a></li>
+                  <li><a href="services.html">Yogurt Products</a></li>
+                </ul>
+            </div>--->
+          </li>
+          <li><a href="#">Physical Services</a></li>
+          <!---<li class="hoverme"><a href="https://play.google.com/store/search?q=dairy+farm+app&c=apps">Mobile Apps</a>
+            <div class="submenu2">
+              <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.yam.feedcalc&pcampaignid=web_share">Android App</a></li>
+                   <li><a href="https://apps.microsoft.com/home?hl=en-US&gl=US">Windows App</a></li>
+                  <li><a href="https://apples.apple.com.com">IOS App</a></li>
+                </ul>
+            </div> 
+          </li>--->
+        </ul>
+      </div>
+    </li>
+    <li><a href="portifolio.html">Portifolio</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    
+    </ul>
+</div> 
+    <section class="about">
+        <center><h2 style="color: #05500b;">About Us</h2>
+        <p style="font-size: 25pxpx;">At Ruyonga Diary Farm, we're more than just a farm - we're a family.Established in 2003, we've been dedicated <br>to providing the freshest and highest quality dairy products to our community. <br>Our commitment to sustainability, animal welfare, and community engagement sets us apart in the industry.</p>
+      </center>
+    </section>
+    <section style="background: cover;">
+      <h4 style="font-size: 30px;text-align: center;">Our Location</h4>
+    	<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6102670904456!2d30.242483273921962!3d0.5851270994091603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1763d6a9fdf4c201%3A0xdab6293cb51aa734!2sJats%20Dairy%20Farm!5e0!3m2!1sen!2sug!4v1711970402850!5m2!1sen!2sug" class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+
+    </section>
+      <center><h2>Our Culture</h2></center>
+    <section class="culture" style="background-color: rgb(188, 233, 194);">
+    	
+    	<table width="100%"> 
+    	<div>
+    		<tr>
+    		<td> 
+            <h3 style="font-family: Harrington; font-size: 20px; color: #03420c;">Family Values</h3>
+            <p>At the heart of Ruyonga Diary Farm is a commitment to family values. We treat each other with respect and kindness, fostering a supportive and inclusive environment where everyone feels valued and heard.</p>
+            <img src="imgs/family values.jpg" alt="Family Engagement" width="100%" height="50%" style="border-radius: 40%;">
+            <center><h3>We engange families in Our activities to promote Unity</h3></center>
+       </td><td width="30%">
+            <h3 style="font-family: Harrington; font-size: 20px; color: #03420c;">Sustainability</h3>
+            <p>We believe in responsible farming practices that prioritize the health of our planet. From renewable energy sources to waste reduction initiatives, we're dedicated to minimizing our environmental footprint.</p>
+            <img src="imgs/sustain.jpg" alt="Sustainability" width="100%" height="50%">
+            <center><h3>++ We do farming alongside conserving the <br>Environment for the betterness of the future ++</h3></center>
+        </td><td width="40%">
+           <h3 style="font-family: Harrington; font-size: 20px; color: #03420c;">Community Engagement</h3>
+            <p>We Give back to the community a cornerstone of our philosophy. Whether it's through local events, educational programs, or donations to food banks, we're always looking for ways to make a positive impact.</p>
+            <center><img src="imgs/community engage.jpg" alt="Family Engagement" width="90%" height="50%" style="border-radius: 40%;">
+            <h3>**We do engage the community in<br> our services, above is when our team was <br>illustrating to the community how to give a simple tratment to sick animals**</h3></center>
+
+     </td>
+      </tr>
+      </div>
+    </table>
+    </section>
+    <section id="team" class="team">
+    <center><h2 class="meet">Meet Our Team</h2></center>
+    <table style="width: 90%; margin-left: 5%;">
+    	<tr align="center">
+        <td>
+          <div class="image-container" onclick="showText('tooltip1')">
+            <img src="imgs/pearl dairy hero 2.jpg" class="img" alt="image 1">
+            <div class="tooltip-text" id="tooltip1"><h2>Jane Kemi</h2><h3>Role: Veterinary constltant</h3></div>
+          </div>
+        </td>
+        <td>
+    <div class="image-container" onclick="showText('tooltip2')">
+      <img src="imgs/manager 1.jpg" class="img" alt="image 2">
+      <div class="tooltip-text" id="tooltip2"><h2>John Karu</h2><h3>Role: Diary Farmer</h3></div>
+    </div>
+     </td>
+     </tr>
+     <tr align="center">
+       <td style="width: 40%;" colspan="2">
+        <div class="image-container" onclick="showText('tooltip3')">
+          <img src="imgs/manager 2.jpg" alt="Image 3" class="img">
+          <div class="tooltip-text" id="tooltip3"><h2>Smith Jats</h2><h3>Role: Sales Manager</h3>
+          </div>
+        </div>  
+    </td>
+    </tr>
+    </table>
+    </div>
+</section >
+    <section >
+        <center><h2 style="font-family: Castellar;">Join Us</h2></center>
+        <center><p style="font-size: 19px; font-family: Lucida Calligraphy;">Interested in joining the Ruyonga Diary Farm family? click any of these below.</p></center>
+<table width="60%" height="40px" align="center">
+	<tr>
+		<td><a href="https://facebook.com"><img class="taberow2" src="imgs/facebook.jpeg" height="40px" width="60px"></a></td>
+		<td><a href="https://wa.me/256760660472"><img class="taberow2" src="imgs/watsap.png" height="40px" width="40px"></a></td>
+		<td><a href="https://yaaho.com"><img class="taberow2" src="imgs/yahoo.jpeg" height="40px" width="60px"></a></td>
+	</tr>
+</table>
+    </section>
+        
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <h3>About Us</h3>
+          <p>Ruyonga Dairy Farm is committed to providing high-quality dairy products sourced from healthy, well-cared-for cattle..</p>
+        </div>
+        <div class="footer-middle">
+          <h3>Contact Us</h3>
+          <p>Email: info@ruy0ngadairyfarm.com</p>
+          <p>Phone: +256 760 660472</p>
+          <p>Address: Plot 23, Hoima City, Uganda</p>
+        </div>
+        <div class="footer-right">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://youtu.be/Azqsg3Naxi4?si=sws4ifL-rLUa48h1"><img src="imgs/youtube.png" height="30px" width="40px"></a>
+            <a href="https://x.com"><img src="imgs/cc.jpeg" height="30px" width="40px" style="margin-left: 40px;"></a>
+          </div>
+        </div>
+        </div>
+        <section class="footer-bottom" >  
+          <a href="#menubar"><input type="button" class="moveup" id="moveup" value="MOVE UP"></a>
+          <center><p>&copy; 2024 Ruyonga Dairy Farm. All rights reserved.</p></center>
+        
+        </section>
+      </footer>
+    
+ <script>
+  function showText(id) {
+    var tooltip = document.getElementById(id);
+    tooltip.style.visibility = "visible";
+    tooltip.style.opacity = 1;
+  }
+</script>
+</body>
+</html>
